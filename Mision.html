@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Tienda Dhakun Ichich</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/main.js"></script>
+    <style>
+
+  body {
+   font: 28px Helvetica;
+  }
+
+  #main {
+   min-height: 500px;
+   margin: 0px;
+   padding: 0px;
+   display: -webkit-flex;
+   display:         flex;
+   -webkit-flex-flow: row;
+           flex-flow: row;
+   }
+
+
+  #main > article {
+   margin: 0px;
+   padding: 5px;
+   <BODY LINK="#FED354" VLINK="#EDB301" ALINK="#FFFF00"
+BGCOLOR="#335142" TEXT="#000000"
+   border-radius: 0pt;
+   -webkit-flex: 3 1 60%;
+           flex: 3 1 60%;
+   -webkit-order: 2;
+           order: 2;
+   }
+
+  #main > nav {
+   margin: 0px;
+   padding: 5px;
+   border: 0px solid #8888bb;
+   border-radius: 0pt;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 1;
+           order: 1;
+   }
+
+  #main > aside {
+   margin: 0px;
+   padding: 5px;
+   border: 0px solid  	#FAF0E6;
+   border-radius: 0pt;
+   -webkit-flex: 1 6 20%;
+           flex: 1 6 20%;
+   -webkit-order: 3;
+           order: 3;
+   }
+
+  header, footer {
+   display: block;
+   margin: 0px;
+   padding: 5px;
+   min-height: 100px;
+   border: 0px solid #eebb55;
+   border-radius: 0pt;
+   }
+
+  /* Too narrow to support three columns */
+  @media all and (max-width: 640px) {
+
+   #main, #page {
+    -webkit-flex-flow: column;
+            flex-flow: column;
+   }
+
+   #main > article, #main > nav, #main > aside {
+    /* Return them to document order */
+    -webkit-order: 0;
+            order: 0;
+   }
+
+   #main > nav, #main > aside, header, footer {
+    min-height: 50px;
+    max-height: 50px;
+   }
+  }
+
+ </style>
+  </head>
+  <body>
+
+    <header>
+<!-- aqui va la tabla -->
+    <left><table class="egt" border="0" width="100%">
+      <tr>
+          <td><left><img src="img/logo/imglogo1.png" width="180px" height="80px"></left></td>
+          <td width="300px" height="70px">
+
+        </td>
+          <td width="500px" height="70px">
+            <div class="wrapper">
+            <nav>
+              <font face="arial black">
+              <a href="Mision.htm">Misión y Visión</a>
+              <a href="Catalogo.html">Todas las categorias</a>
+            </font>
+          </nav>
+          </div>
+        </td>
+
+        </tr>
+      </table>
+    </left>
+<!-- aqui termina la tabla -->
+    <span id="button-menu" class="fa fa-bars"></span>
+
+    <nav class="navegacion">
+      <ul class="menu">
+        <!-- TITULAR -->
+        <li class="title-menu">Todas las categorias</li>
+        <!-- TITULAR -->
+
+        <li><a href="index.html"><span class="fa fa-home icon-menu"></span>Inicio</a></li>
+
+        <li class="item-submenu" menu="1">
+          <a href="#"><span class="fa fa-suitcase icon-menu"></span>Servicios</a>
+          <ul class="submenu">
+            <li class="title-menu"><span class="fa fa-suitcase icon-menu"></span>Servicios</li>
+            <li class="go-back">Atras</li>
+
+            <li><a href="Servicios.html">Servicio Dhak'um Ichich</a></li>
+            <li><a href="#">Otro</a></li>
+          </ul>
+        </li>
+
+        <li class="item-submenu" menu="2">
+          <a href="#"><span class="fa fa-shopping-bag icon-menu"></span>Tienda</a>
+          <ul class="submenu">
+            <li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span>Catalogo de productos</li>
+            <li class="go-back">Atras</li>
+
+            <li><a href="Categorias/BlusasCamisas.html">Blusas y camisas</a></li>
+						<li><a href="Categorias/Monederos.html">Monederos</a></li>
+						<li><a href="Categorias/Bolsas.html">Bolsas</a></li>
+						<li><a href="Categorias/Lapiceras.html">Lapiceras</a></li>
+						<li><a href="Categorias/VestidosConjuntos.html">Vestidos y conjuntos</a></li>
+						<li><a href="Categorias/Tenis.html">Tenis</a></li>
+						<li><a href="Categorias/Otros.html">Otros</a></li>
+
+          </ul>
+        </li>
+
+        <li><a href="Contactanos.html"><span class="fa fa-envelope icon-menu"></span>Contacto</a></li>
+        <li><a href="acercade.html"><span class="fa fa-tag icon-menu"></span>Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenido">
+     <h2><Center>MISIÓN</Center></h2>
+     <center><p>Realizar productos de alta calidad con bordados huastecos de nuestra región llevando consigo y para definir nuestra cultura
+
+    </p> </center>
+
+
+     <center><img style="margin:10px;" alt="" src="img/Extras//LOGO.jpg"  width=400 px; high=100 px;/> </center>
+
+     <h2><Center>VISIÓN</Center></h2>
+     <center><p>Lograr que las personas adquieran nuestros productos con el fin de difundir nuestra cultura.
+    </p> </center>
+    <br>
+    <br>
+
+
+
+</div>
+ <footer>
+
+
+</footer>
+
+  </body>
+</html>

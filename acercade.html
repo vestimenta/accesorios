@@ -1,0 +1,150 @@
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Tienda Dhakun Ichich</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/font-awesome.css">
+
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/main.js"></script>
+<script>
+    /**
+     * Array con las imagenes y enlaces que se iran mostrando en la web
+     */
+    var imagenes=new Array(
+
+        ['img/Extras/3.png',''],
+        ['img/Extras/4.png','']
+    );
+
+    /**
+     * Funcion para cambiar la imagen y link
+     */
+    function rotarImagenes()
+    {
+        // obtenemos un numero aleatorio entre 0 y la cantidad de imagenes que hay
+        var index=Math.floor((Math.random()*imagenes.length));
+
+        // cambiamos la imagen y la url
+        document.getElementById("imagen").src=imagenes[index][0];
+        document.getElementById("link").href=imagenes[index][1];
+    }
+
+    /**
+     * Función que se ejecuta una vez cargada la página
+     */
+    onload=function()
+    {
+        // Cargamos una imagen aleatoria
+        rotarImagenes();
+
+        // Indicamos que cada 5 segundos cambie la imagen
+        setInterval(rotarImagenes,5000);
+    }
+</script>
+	</head>
+
+  <body background="img/fondo/fondoazul2.jpg">
+
+  <header>
+<!-- aqui va la tabla -->
+    <left><table class="egt" border="0" width="100%">
+      <tr>
+          <td><left><img src="img/logo/imglogo1.png" width="180px" height="80px"></left></td>
+          <td width="300px" height="70px">
+
+        </td>
+          <td width="500px" height="70px">
+            <div class="wrapper">
+            <nav>
+              <font face="arial black">
+              <a href="Mision.html">Misión y Visión</a>
+              <a href="Catalogo.html">Todas las categorias</a>
+            </font>
+          </nav>
+          </div>
+        </td>
+
+        </tr>
+      </table>
+    </left>
+<!-- aqui termina la tabla -->
+    <span id="button-menu" class="fa fa-bars"></span>
+
+    <nav class="navegacion">
+      <ul class="menu">
+        <!-- TITULAR -->
+        <li class="title-menu">Todas las categorias</li>
+        <!-- TITULAR -->
+
+        <li><a href="index.html"><span class="fa fa-home icon-menu"></span>Inicio</a></li>
+
+        <li class="item-submenu" menu="1">
+          <a href="#"><span class="fa fa-suitcase icon-menu"></span>Servicios</a>
+          <ul class="submenu">
+            <li class="title-menu"><span class="fa fa-suitcase icon-menu"></span>Servicios</li>
+            <li class="go-back">Atras</li>
+
+            <li><a href="Servicios.html">Servicio Dhak'um Ichich</a></li>
+            <li><a href="#">Otro</a></li>
+          </ul>
+        </li>
+
+        <li class="item-submenu" menu="2">
+          <a href="#"><span class="fa fa-shopping-bag icon-menu"></span>Tienda</a>
+          <ul class="submenu">
+            <li class="title-menu"><span class="fa fa-shopping-bag icon-menu"></span>Catalogo de productos</li>
+            <li class="go-back">Atras</li>
+
+            <li><a href="Categorias/BlusasCamisas.html">Blusas y camisas</a></li>
+						<li><a href="Categorias/Monederos.html">Monederos</a></li>
+						<li><a href="Categorias/Bolsas.html">Bolsas</a></li>
+						<li><a href="Categorias/Lapiceras.html">Lapiceras</a></li>
+						<li><a href="Categorias/VestidosConjuntos.html">Vestidos y conjuntos</a></li>
+						<li><a href="Categorias/Tenis.html">Tenis</a></li>
+						<li><a href="Categorias/Otros.html">Otros</a></li>
+
+          </ul>
+        </li>
+
+        <li><a href="Contactanos.html"><span class="fa fa-envelope icon-menu"></span>Contacto</a></li>
+        <li><a href="acercade.html"><span class="fa fa-tag icon-menu"></span>Acerca de</a></li>
+      </ul>
+    </nav>
+  </header>
+
+   <br>
+   <div class="contenido">
+     <center>
+      <br>
+      <h1><font color="
+#F0FFFF" face="Book Antiqua">ACERCA DE "DHAK'UM ICHICH"</font></h1>
+      <BR>
+     <a href="" id="link"><img src="img/logo/imglogo.png"  width="560 px"; height="300 px";></a>
+
+         </BR>
+       </center>
+   <center><table border="0" cellspacing="0">
+       <tr><td height="50" whith="50" >
+
+        <section width="60%">
+            <font face="Arial", size="5" color="#F0FFFF">
+              <p align="justify">Grupo de personas originarios de San Antonio dedicadas al desarrollo de todos los procesos de personalización y todo tipo de artículos con Bordado. En producto textil, Aplicando nuestro conocimiento en el mundo de la personalización y los bordados tradicionales. Nuestra finalidad es la de utilizar su idea, siempre que el logotipo lo permita y si no fuera así, asesorarle sobre la mejor forma de conseguirlo. Disponemos de un nuevo servicio de apartado de muy alta calidad los productos que se ofrecen. Posibilidad de crear una imagen con entera libertad en cualquier tamaño para aplicar a todo tipo de bordado: prendas textiles, etc, a un gran precio, Transmitiendo una imagen que va a ser difundida a un amplio sector de la población con solo un golpe de vista. </p>
+
+            <p align="justify">Ven y visitanos</p>
+            </font>
+           </section>
+
+
+           </td>
+       </tr>
+       </table>
+         </center>
+
+
+
+
+     </div>
+  </body>
+</html>
